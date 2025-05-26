@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <title>Trang Giới Thiệu</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #FFFACD;
+            color: #DDD;
+        }
+
+        /* Ảnh nền và chữ overlay trong header */
+        header {
+            background: url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            position: relative;
+            height: 300px;
+            color: white;
+        }
+
+        /* Logo nhỏ ở header góc trên bên trái */
+        header img {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            max-width: 200px;
+            height: auto;
+            z-index: 50;
+        }
+
+        /* Khối chữ overlay */
+        .overlay-text {
+            position: absolute;
+            top: 80%;
+            left: 30px;
+            transform: translateY(-50%);
+            text-align: left;
+            max-width: 500px;
+            z-index: 5;
+        }
+
+        .overlay-text h1 {
+            font-size: 40px;
+            margin: 0 0 10px 0;
+            color: #FF69B4; /* vàng sáng */
+        }
+        .overlay-text p {
+            font-size: 20px;
+            color:#FF0000; /* vàng nhạt */
+        }
+
+        /* Thanh menu */
+        nav {
+            background-color: rgba(52, 73, 94, 0.9);
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #1abc9c;
+        }
+
+        /* Nội dung chính */
+        .content {
+            margin: 30px auto;
+            max-width: 800px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            color: #333;
+        }
+
+        /* Chân trang */
+        footer {
+            background-color: rgba(44, 62, 80, 0.8);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Responsive cho điện thoại */
+        @media (max-width: 600px) {
+            .overlay-text h1 {
+                font-size: 24px;
+            }
+            .overlay-text p {
+                font-size: 16px;
+            }
+            nav a {
+                padding: 10px;
+                font-size: 14px;
+            }
+            header {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="hinh1.jpg" alt="Logo" />
+    <div class="overlay-text">
+        <h1>BỘ CỒNG KỀNH</h1>
+        <p>Phòng thủy quân lục túi - tác chiến không gian mạng!</p>
+    </div>
+</header>
+
+<nav>
+    <a href="#">Trang chủ</a>
+    <a href="#">Giới thiệu</a>
+    <a href="#">Truy soát hồ sơ</a>
+     <a href="#">Tin tức - sự kiện</a>
+     <a href="#">Danh sách giải ngân</a>
+</nav>
+
+<div class="content">
+    <h2>Giới thiệu</h2>
+    <p>Đây là cổng thông tin nội bộ phòng thu hồi vốn phòng thủy quân lục túi</p>
+</div>
+
+<footer>
+    © Cổng thông tin nội bộ thầm kín A05 - Ma Quang Sáng
+      
+</footer>
+
+</body>
+</html>
